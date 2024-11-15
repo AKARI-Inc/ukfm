@@ -1,5 +1,5 @@
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='ukfm',
@@ -8,6 +8,6 @@ setup(
     author='Martin Brossard',
     author_email='martin.brossard@mines-paristech.fr',
     license='BSD-3',
-    packages=['ukfm'],
+    packages=find_packages(),
     install_requires=['numpy', 'scipy', 'matplotlib']
 )
